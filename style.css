@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
-/* @import 'nib';
-@import 'jeet' */
+
+* {
+  cursor: none;
+}
 
 body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+
+  cursor: none;
 
   font-family: 'Lato', sans-serif;
 }
@@ -100,18 +104,57 @@ p {
 	}
 }
 
-.cursor {
-    pointer-events: none;
+body {
+  display: flex;
 
-    &__ball {
-      position: fixed;
-      top: 0;
-      left: 0;
-      mix-blend-mode: difference;
-      z-index: 1000;
+  height: 100vh;
+  margin: 0;
 
-      circle {
-        fill: #f7f8fa;
-      }
-    }
-  }
+  cursor: none;
+
+  background: #010101;
+
+  /* font-family: monospace; */
+}
+body a {
+  margin-top: 25px;
+  padding: 10px 0;
+
+  border-bottom: 2px solid #fff;
+}
+body .cursor {
+  pointer-events: none;
+}
+body .cursor__ball {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+
+  mix-blend-mode: difference;
+}
+body .cursor__ball circle {
+  fill: #f7f8fa;
+}
+body .left,
+body .right {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+body .right {
+  background: #fff;
+}
+body .right a {
+  border-bottom: 2px solid #000;
+}
+body .right h1,
+body .right p,
+body .right a {
+  color: #000;
+}
