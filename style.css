@@ -44,22 +44,29 @@ h1 {
 }
 
 p {
-  display: flex;
-  overflow: hidden;
-
+  /* display: flex;
+  overflow: hidden; */
   height: 100%;
+  margin-top: 40vw;
   padding: 100px;
+
+  text-transform: uppercase;
 
   color: #000;
 
-  font-size: 18px;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 42px;
+}
 
-  justify-content: center;
-  align-items: center;
+span {
+  filter: invert(0%);
+  mix-blend-mode: #FF37A6;
 }
 
 .pointer {
   position: absolute;
+  z-index: 200;
   top: 50%;
   left: 50%;
 
@@ -157,4 +164,8 @@ body .right h1,
 body .right p,
 body .right a {
   color: #000;
+}
+
+@media (min-width: 320px) {
+
 }
