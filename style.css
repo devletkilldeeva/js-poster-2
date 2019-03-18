@@ -44,8 +44,8 @@ h1 {
 }
 
 p {
-  /* display: flex;
-  overflow: hidden; */
+  display: flex;
+  overflow: hidden;
   height: 100%;
   margin-top: 40vw;
   padding: 100px;
