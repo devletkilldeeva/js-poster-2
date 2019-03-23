@@ -41,3 +41,29 @@ span {
   display: flex;
   flex-direction: row;
 }
+
+@media (max-width: 767px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info {
+    position: absolute;
+
+    flex-direction: column;
+
+    /* margin-top: 20vw; */
+  }
+
+  span {
+    margin-top: 8vw;
+    margin-right: auto;
+
+    font-size: 6vw;
+  }
+
+  img {
+    width: 10vw;
+  }
+}
