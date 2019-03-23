@@ -44,8 +44,8 @@ h1 {
 }
 
 p {
-  display: flex;
-  overflow: hidden;
+  /* display: flex; */
+  overflow-y: scroll;
 
   height: 100%;
   margin-top: 40vw;
@@ -58,6 +58,10 @@ p {
   font-size: 36px;
   font-weight: bold;
   line-height: 42px;
+}
+
+a {
+  color: black;
 }
 
 span {
@@ -121,14 +125,9 @@ body {
   cursor: none;
 
   background: #010101;
-
-  /* font-family: monospace; */
 }
 body a {
   margin-top: 25px;
-  padding: 10px 0;
-
-  border-bottom: 2px solid #fff;
 }
 body .cursor {
   pointer-events: none;
@@ -167,6 +166,12 @@ body .right a {
   color: #000;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 768px) {
+  p {
+    padding: 10px;
+
+    font-size: 16px;
+    line-height: normal;
+  }
 
 }

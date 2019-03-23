@@ -1,0 +1,43 @@
+p {
+  display: flex;
+  overflow: visible;
+
+  margin-top: 30vw;
+  padding: 0;
+
+  color: white;
+
+  font-size: 20vw;
+}
+
+a {
+  padding: 10px 20px;
+}
+
+section {
+  overflow: visible;
+  flex-direction: column;
+
+  background-color: black;
+}
+
+.reload {
+  position: absolute;
+
+  text-decoration: none;
+}
+
+span {
+  margin-top: -15vw;
+  margin-right: 50px;
+
+  color: white;
+
+  font-family: Avenir Next;
+  font-size: 2vw;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+}
