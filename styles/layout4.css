@@ -1,6 +1,6 @@
 p {
   display: flex;
-  overflow: visible;
+  /* overflow: visible; */
 
   margin-top: 30vw;
   padding: 0;
@@ -15,7 +15,7 @@ a {
 }
 
 section {
-  overflow: visible;
+  /* overflow: visible; */
   flex-direction: column;
 
   background-color: black;
