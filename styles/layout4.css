@@ -1,13 +1,12 @@
 p {
   display: flex;
-  /* overflow: visible; */
 
   margin-top: 30vw;
   padding: 0;
 
   color: white;
 
-  font-size: 20vw;
+  font-size: 20vw;;
 }
 
 a {
@@ -15,7 +14,6 @@ a {
 }
 
 section {
-  /* overflow: visible; */
   flex-direction: column;
 
   background-color: black;
@@ -43,6 +41,10 @@ span {
 }
 
 @media (max-width: 767px) {
+  p {
+      margin-bottom: 100vw;
+  }
+
   body {
     display: flex;
     flex-direction: column;
@@ -53,8 +55,6 @@ span {
 
     display: flex;
     flex-direction: column;
-
-    /* margin-top: 20vw; */
   }
 
   span {
