@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width">
     <title></title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="jquery-3.3.1.js" charset="utf-8"></script>
-    <script src="TweenMax.min.js" charset="utf-8"></script>
+    <script src="javascript/TweenMax.min.js" charset="utf-8"></script>
+    <script src="javascript/jquery-3.3.1.js" charset="utf-8"></script>
   </head>
   <body>
 
@@ -26,10 +26,16 @@
 
     <section>
       <div class="pointer"></div>
-      <p>Forget about the heavy backpack, the problem of lack of pockets on some clothes. Also, the safety of your devices is provided with reliable protection against theft. It can accommodate any personal <a href="index4.html">gadget</a>, starting with the phone and ending with Your personal computer.</p>
+      <p>Forget about the heavy backpack, the problem of lack of pockets on some clothes. Also, the safety of your devices is provided with reliable protection against theft. It can accommodate any personal <a class="hoverable" href="dotcontact.html">gadget</a>, starting with the phone and ending with Your personal computer.</p>
     </section>
 
     <script type="text/javascript">
+    document.body.className = 'fade';
+    setTimeout(function(){
+        document.body.className = 'appear';
+    }, 0);
+
+
       $(document).mousemove(function(e){
         $('.pointer').css({left:e.pageX, top:e.pageY})
       })
@@ -87,7 +93,6 @@
     var mouseY = e.clientY;
 
     if (!initCursor) {
-      // cursor.style.opacity = 1;
       TweenLite.to(cursor, 0.3, {
         opacity: 1
       });

@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width">
     <title></title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/layout2.css">
     <script src="javascript/TweenMax.min.js" charset="utf-8"></script>
     <script src="javascript/jquery-3.3.1.js" charset="utf-8"></script>
   </head>
   <body>
-    <a class="language" href="ru/indexru.html">ru</a>
 
     <div class="cursor">
   <div class="cursor__ball cursor__ball--big ">
@@ -27,21 +27,16 @@
 
     <section>
       <div class="pointer"></div>
-      <p><a class="hoverable" href="infinite.html">DOT</a> is a bracelet for gadgets.</p>
+      <p>An <a class="hoverable" href="gadget.html">infinite</a> number of gadgets can now be stored in one safe, secure place.</p>
     </section>
 
-    <script src="javascript/js.html" type="text/javascript">
-
-    </script>
-
-    <script>
-document.body.className = 'fade';
-setTimeout(function(){
-    document.body.className = 'appear';
-}, 0);
-</script>
-
     <script type="text/javascript">
+    document.body.className = 'fade';
+    setTimeout(function(){
+        document.body.className = 'appear';
+    }, 0);
+
+
       $(document).mousemove(function(e){
         $('.pointer').css({left:e.pageX, top:e.pageY})
       })

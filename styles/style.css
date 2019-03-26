@@ -1,5 +1,17 @@
 @import "fonts";
 
+body.fade{
+    opacity: 0;
+}
+
+body.appear{
+    transition: opacity 2s;
+
+    opacity: 1;
+
+}
+
+
 * {
   cursor: none;
 
@@ -161,6 +173,23 @@ body .right h1,
 body .right p,
 body .right a {
   color: #000;
+}
+
+.language {
+  position: absolute;
+  z-index: 1000;
+
+  margin-left: 2vw;
+
+  text-decoration: overline;
+
+  color: white;
+
+  font-family: Avenir Next;
+  font-size: 3vw;
+  font-weight: normal;
+
+  mix-blend-mode: difference;
 }
 
 @media (max-width: 768px) {

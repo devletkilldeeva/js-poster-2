@@ -4,10 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title></title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/layout2.css">
-    <script src="jquery-3.3.1.js" charset="utf-8"></script>
-    <script src="TweenMax.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../javascript/TweenMax.min.js" charset="utf-8"></script>
+    <script src="../javascript/jquery-3.3.1.js" charset="utf-8"></script>
   </head>
   <body>
 
@@ -27,10 +26,16 @@
 
     <section>
       <div class="pointer"></div>
-      <p>An <a href="index3.html">infinite</a> number of gadgets can now be stored in one safe, secure place.</p>
+      <p>Забудьте о тяжелом рюкзаке, о проблеме отсутствия карманов на некоторой одежде. Также безопасность ваших устройств обеспечивается надежной защитой от краж. ДОТ может вместить в себя любой персональный ,<a class="hoverable" href="dotcontactru.html">гаджет</a>, начиная с телефона и заканчивая Вашим персональным компьютером.</p>
     </section>
 
     <script type="text/javascript">
+    document.body.className = 'fade';
+    setTimeout(function(){
+        document.body.className = 'appear';
+    }, 0);
+
+
       $(document).mousemove(function(e){
         $('.pointer').css({left:e.pageX, top:e.pageY})
       })
@@ -88,7 +93,6 @@
     var mouseY = e.clientY;
 
     if (!initCursor) {
-      // cursor.style.opacity = 1;
       TweenLite.to(cursor, 0.3, {
         opacity: 1
       });
